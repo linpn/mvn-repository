@@ -4,17 +4,17 @@ git pull
 
 MVN_DIR=/Users/Lpn520/Linpn/github/mvn-repository
 
-rm -rf com/github/linpn/dubbo
-cd /Users/Lpn520/Linpn/github/dubbo/dubbo
-git pull
-mvn -DaltDeploymentRepository=snapshot-repo::default::file:$MVN_DIR clean deploy
-cd $MVN_DIR
-
-#rm -rf com/github/linpn/ibatis
-#cd /Users/Lpn520/Linpn/github/ibatis/ibatis
+#rm -rf com/github/linpn/dubbo
+#cd /Users/Lpn520/Linpn/github/dubbo/dubbo
 #git pull
 #mvn -DaltDeploymentRepository=snapshot-repo::default::file:$MVN_DIR clean deploy
 #cd $MVN_DIR
+
+rm -rf com/github/linpn/ibatis
+cd /Users/Lpn520/Linpn/github/ibatis/ibatis
+git pull
+mvn -DaltDeploymentRepository=snapshot-repo::default::file:$MVN_DIR clean deploy
+cd $MVN_DIR
 
 #rm -rf com/github/linpn/tools
 #cd /Users/Lpn520/Linpn/github/tools
